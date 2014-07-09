@@ -16,7 +16,7 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="item active" style=" background-image: url('images/ambiente.jpg')">
+            <div class="item active" style=" background-image: url('images/ambiente2.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Ambiente</h1>
@@ -24,10 +24,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item" style=" background-image: url('images/bahnhof.jpg')">
+            <div class="item" style=" background-image: url('images/alter_bahnhof.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Location</h1>
+                        <h1>Der Bahnhof</h1>
                         <p>Mittem im Herzen der Stadt!</p>
                     </div>
                 </div>
@@ -55,19 +55,20 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-lg-4">
-                <img class="img-circle" src="images/bahnbedienung.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <div class="col-lg-4 text-center">
+                    <img class="img-circle" src="images/bahnbedienung.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+
                 <h2>Authentische Bedienung</h2>
                 <p>Unsere Bedienung bedient Sie in authentischer alter Lokführer Uniform.</p>
                 <p><g:link controller="employee">Mitarbeiter</g:link></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 text-center">
                 <img class="img-circle" src="images/speisen.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                 <h2>Speisen</h2>
                 <p>Feinst hergerichtete Speisen, im Sinne der Eisenbahn. Es gibt aber auch normale Speisen.</p>
                 <p><g:link controller="category">Fahrplan</g:link></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 text-center">
                 <img class="img-circle" src="images/bahnhof.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                 <h2>Am alten Güterbahnhof</h2>
                 <p>Restaurant am alten Güterbahnhof mit schöner Eisenbahn bedienung.</p>

@@ -1,5 +1,6 @@
 import org.apache.shiro.crypto.hash.Sha256Hash
 import restauraw.calendar.Day
+import restauraw.calendar.Event
 import restauraw.calendar.Shift
 import restauraw.menu.Dish
 import restauraw.menu.Menu
@@ -26,8 +27,8 @@ class BootStrap {
                 job: Employee.Job.COORDINATOR);
         admin.save(flush: true, failOnError: true)
         admin.addToPermissions("*:*")
-
-
+//TODO: Gerichte einzeln machen
+//TODO: HAuptspeise -> Langstrecke, Vorspeise Kurzstrecke ...
         def dish1 = new Dish(name: "Rasender Roland", ingredients: "Hackfleisch", price: 5.9)
         def dish2 = new Dish(name: "Transrapid", ingredients: "Käse", price: 6.5)
         def dish3 = new Dish(name: "Eiskrem", ingredients: "Erdbeeren", price: 2.2)
@@ -53,6 +54,7 @@ class BootStrap {
 
         def menu = new Menu(name: "Speisekarte", info: "Unser Bestes").addToCategorys(category3).addToCategorys(category2).addToCategorys(category1).save(flush: true, failOnError: true)
 
+        def event1 = new Event()
 
 
         def shift = new Shift(shiftTime: Shift.ShiftTime.EARLY)
