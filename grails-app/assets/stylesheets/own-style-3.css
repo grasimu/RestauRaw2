@@ -1,0 +1,81 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #949B97;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color:  #949B97;
+    color: #7c715f;
+}
+
+.footer .link-footer {
+    color:#38241F;
+}
+
+/*      Color-Theme
+ *      https://kuler.adobe.com/de/Railroad-color-theme-3441656/
+ */
+
+/* navbar-color*/
+.navbar-inverse{
+    background-color: #38241F;
+    border-color: #38241F;
+}
+
+.navbar-header{
+    width: auto;
+    background-color:  #38241F;
+}
+
+.navbar-nav{
+    background-color: #38241F;
+}
+
+.navbar-wrapper {
+    background-color: #38241F;
+}
+
+/*Navbar font-color*/
+.navbar-inverse .navbar-brand{
+    color: #91F3FF;
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #91F3FF;
+
+}
+
+.location-container {
+    /*background-color: #AB0004;*/
+    background-color: #949B97;
+    padding-top: 15px;
+}
+
+.container {
+    color: #000000;
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.38);
+    border-radius: 15px;
+    padding: 10px;
+    color: #949B97;
+}
+
+a {
+    color: #949B97;
+    text-decoration: none;
+}

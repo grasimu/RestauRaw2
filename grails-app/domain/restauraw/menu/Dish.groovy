@@ -2,6 +2,7 @@ package restauraw.menu
 
 class Dish{
 
+    String imgUri;
     String ingredients
     float price
     String name
