@@ -29,6 +29,7 @@
 					<g:submitButton name="create" class="btn btn-success save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
 				</fieldset>
 			</g:form>
+
 		</div>
 	</body>
 </html>

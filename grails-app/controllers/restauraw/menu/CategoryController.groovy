@@ -14,6 +14,10 @@ class CategoryController {
         params.max = Math.min(max ?: 10, 100)
         respond Category.list(params), model:[categoryInstanceCount: Category.count()]
     }
+    def publicV(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        respond Category.list(params), model:[categoryInstanceCount: Category.count()]
+    }
 
     def show(Category categoryInstance) {
         respond categoryInstance

@@ -64,6 +64,7 @@ grails.project.dependency.resolution = {
         compile ":asset-pipeline:1.8.7"
         compile ":shiro:1.2.1"
         compile ":twitter-bootstrap:3.2.0"
+        compile ':jquery-date-time-picker:0.1.0'
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.5.3" // or ":hibernate:3.6.10.15"

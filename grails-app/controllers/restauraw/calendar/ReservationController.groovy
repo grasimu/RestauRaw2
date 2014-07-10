@@ -14,6 +14,9 @@ class ReservationController {
         params.max = Math.min(max ?: 10, 100)
         respond Reservation.list(params), model:[reservationInstanceCount: Reservation.count()]
     }
+    def publicV() {
+        respond new Reservation(params)
+    }
 
     def show(Reservation reservationInstance) {
         respond reservationInstance
@@ -22,7 +25,28 @@ class ReservationController {
     def create() {
         respond new Reservation(params)
     }
+    @Transactional
+    def save2(Reservation reservationInstance) {
+        if (reservationInstance == null) {
+            notFound()
+            return
+        }
 
+        if (reservationInstance.hasErrors()) {
+            respond reservationInstance.errors, view:'publicV'
+            return
+        }
+
+        reservationInstance.save flush:true
+
+        request.withFormat {
+            form multipartForm {
+                flash.message = message(code: 'default.created.message', args: [message(code: 'reservation.label', default: 'Reservation'), reservationInstance.id])
+                redirect reservationInstance
+            }
+            '*' { respond reservationInstance, [status: CREATED] }
+        }
+    }
     @Transactional
     def save(Reservation reservationInstance) {
         if (reservationInstance == null) {

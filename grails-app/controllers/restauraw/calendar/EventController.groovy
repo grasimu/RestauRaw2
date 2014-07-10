@@ -14,6 +14,10 @@ class EventController {
         params.max = Math.min(max ?: 10, 100)
         respond Event.list(params), model:[eventInstanceCount: Event.count()]
     }
+    def publicV(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        respond Event.list(params), model:[eventInstanceCount: Event.count()]
+    }
 
     def show(Event eventInstance) {
         respond eventInstance

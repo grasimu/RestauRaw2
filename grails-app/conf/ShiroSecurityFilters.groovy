@@ -12,6 +12,8 @@ class ShiroSecurityFilters {
                 if (!controllerName || controllerName == 'assets') return true
                 if(controllerName.contains('category') && actionName == 'publicV') return true
                 if(controllerName.contains('reservation') && actionName == 'publicV') return true
+                if(controllerName.contains('reservation') && actionName == 'show') return true
+                if(controllerName.contains('reservation') && actionName == 'save2') return true
                 if(controllerName.contains('event') && actionName == 'publicV') return true
                 if(controllerName.contains('location') && actionName == 'index') return true
                 if(controllerName.contains('restaurant') && actionName == 'index') return true
