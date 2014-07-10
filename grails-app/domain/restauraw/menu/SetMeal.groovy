@@ -49,5 +49,9 @@ class SetMeal {
        return out.subSequence(0,out.length()-2)
     }
 
+    public String getUri(){
+        return dishes.getAt(0).imgUri;
+    }
+
 
 }
