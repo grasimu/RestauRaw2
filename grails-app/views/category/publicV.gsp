@@ -20,7 +20,7 @@
                 <div class="fahrplan-speise">
                     <div class="fahrplan-speise-bild"  style="background-image: url(${s?.getUri().encodeAsHTML()})"></div>
                     <div class="fahrplan-speise-content">
-                        <div class="fahrplan-speise-name">${s?.encodeAsHTML()} € </div>
+                        <div class="fahrplan-speise-name">${s?.encodeAsHTML()} €</div>
                         <div class="fahrplan-speise-info">Zutaten: ${s?.getIngredients().encodeAsHTML()}</div>
                     </div>
                 </div>

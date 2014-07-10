@@ -2,7 +2,7 @@ package restauraw.menu
 
 class Dish{
 
-    String imgUri = '../images/food/Spaghetti.jpg'
+    String imgUri = "'../images/food/Spagehtti.jpg'"
     String ingredients
     float price
     String name
@@ -17,9 +17,9 @@ class Dish{
         price(blank:false, nullable:false, min:0.0f, scale: 2)
         imgUri  nullable: true
     }
-    static mapping = {
-        imgUri defaultValue:  "'../images/food/Spaghetti.jpg'"
-    }
+//    static mapping = {
+//        imgUri defaultValue:  "'../images/food/Spaghetti.jpg'"
+//    }
 
     @Override
     String toString() {
