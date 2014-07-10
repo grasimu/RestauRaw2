@@ -20,7 +20,7 @@
     <br>
     <br>
     <g:link class="form-control" controller="menu">Speisekarte</g:link>
-    <g:link class="form-control" controller="category">Kategorie</g:link>
+    <g:link class="form-control" controller="category" action="create">Kategorie</g:link>
     <g:link class="form-control" controller="setMeal">Menüs</g:link>
     <g:link class="form-control" controller="dish">Speisen</g:link>
     <br>
