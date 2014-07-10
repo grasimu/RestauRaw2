@@ -18,7 +18,7 @@
             </div>
             <g:each in="${categoryInstance.sets}" var="s">
                 <div class="fahrplan-speise">
-                    <div class="fahrplan-speise-bild"  style="background-image: url('../images/apfel-curry-sueppchen.jpg')"></div>
+                    <div class="fahrplan-speise-bild"  style="background-image: url('../../../web-app/images/food/apfel-curry-sueppchen.jpg')"></div>
                     <div class="fahrplan-speise-content">
                         <div class="fahrplan-speise-name">${s?.encodeAsHTML()} €</div>
                         <div class="fahrplan-speise-info">Inhaltsstoffe: ${s?.getIngredients().encodeAsHTML()}</div>

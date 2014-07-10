@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item" style=" background-image: url('images/speisen.jpg')">
+            <div class="item" style=" background-image: url('../../web-app/images/food/speisen.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Speisen</h1>
@@ -63,7 +63,7 @@
                 <p><g:link controller="employee">Mitarbeiter</g:link></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center">
-                <img class="img-circle" src="images/speisen.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <img class="img-circle" src="../../web-app/images/food/speisen.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                 <h2>Speisen</h2>
                 <p>Feinst hergerichtete Speisen, im Sinne der Eisenbahn. Es gibt aber auch normale Speisen.</p>
                 <p><g:link controller="category">Fahrplan</g:link></p>

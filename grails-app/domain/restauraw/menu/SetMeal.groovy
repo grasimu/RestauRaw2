@@ -15,7 +15,7 @@ class SetMeal {
         for(Dish d in dishes){
             sum += d.price
         }
-        return sum;
+        return String.format("%.2f", sum);
     }
 
 
@@ -27,8 +27,13 @@ class SetMeal {
         if(dishes && dishes.size() == 1){
             string = dishes[0]
         }else{
+            string += " enhält: "
             def dishesArr = dishes.toArray()
-            string += " enhält: $dishesArr "
+            for (Dish dish in dishesArr ){
+                string  += "$dish, "
+            }
+            string = string.subSequence(0,string.length()-2)
+
         }
         string += " - " + getPrice()
 

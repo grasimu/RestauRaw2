@@ -29,7 +29,7 @@ class BootStrap {
         admin.addToPermissions("*:*")
 //TODO: Gerichte einzeln machen
 //TODO: HAuptspeise -> Langstrecke, Vorspeise Kurzstrecke ...
-        def dish1 = new Dish(name: "Rasender Roland", ingredients: "Hackfleisch", price: 5.9)
+        def dish1 = new Dish(name: "Rasender Roland",imgUri: "../images/food/meat.jpg", ingredients: "Hackfleisch", price: 5.9)
         def dish2 = new Dish(name: "Transrapid", ingredients: "Käse", price: 6.5)
         def dish3 = new Dish(name: "Eiskrem", ingredients: "Erdbeeren", price: 2.2)
         def dish4 = new Dish(name: "Kuchen", ingredients: "Erdbeeren", price: 2.7)
