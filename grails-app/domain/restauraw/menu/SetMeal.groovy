@@ -30,8 +30,19 @@ class SetMeal {
             def dishesArr = dishes.toArray()
             string += " enhält: $dishesArr "
         }
-        string += " ; kostet: " + getPrice()
+        string += " - " + getPrice()
 
         return string
     }
+
+   public String getIngredients(){
+       String out = ""
+       def dishesArr = dishes.toArray()
+       for (Dish dish in dishesArr ){
+           out += "$dish, "
+       }
+       return out.subSequence(0,out.length()-2)
+    }
+
+
 }

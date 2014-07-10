@@ -2,7 +2,7 @@ package restauraw.menu
 
 class Dish{
 
-    String imgUri;
+    String imgName;
     String ingredients
     float price
     String name
@@ -11,6 +11,7 @@ class Dish{
 
     static constraints = {
         price(blank:false, nullable:false, min:0.0f, scale: 2)
+        imgName  nullable: true
     }
 
     @Override
