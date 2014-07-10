@@ -10,7 +10,9 @@ class ShiroSecurityFilters {
             before = {
                 // Ignore direct views (e.g. the default main index page).
                 if (!controllerName || controllerName == 'assets') return true
-                if(controllerName.contains('category') && actionName == 'index') return true
+                if(controllerName.contains('category') && actionName == 'publicV') return true
+                if(controllerName.contains('reservation') && actionName == 'publicV') return true
+                if(controllerName.contains('event') && actionName == 'publicV') return true
                 if(controllerName.contains('location') && actionName == 'index') return true
                 if(controllerName.contains('restaurant') && actionName == 'index') return true
                 // Access control by convention.
