@@ -7,5 +7,7 @@ class Menu {
     static hasMany = [categorys:Category]
 
     static constraints = {
+        name()
+        info()
     }
 }

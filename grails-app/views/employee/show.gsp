@@ -27,20 +27,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${employeeInstance?.job}">
-				<li class="fieldcontain">
-					<span id="job-label" class="property-label"><g:message code="employee.job.label" default="Job" /></span>
-					
-						<span class="property-value" aria-labelledby="job-label"><g:fieldValue bean="${employeeInstance}" field="job"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${employeeInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="employee.name.label" default="Name" /></span>
 					
 						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${employeeInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${employeeInstance?.job}">
+				<li class="fieldcontain">
+					<span id="job-label" class="property-label"><g:message code="employee.job.label" default="Job" /></span>
+					
+						<span class="property-value" aria-labelledby="job-label"><g:fieldValue bean="${employeeInstance}" field="job"/></span>
 					
 				</li>
 				</g:if>

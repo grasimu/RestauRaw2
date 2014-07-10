@@ -18,11 +18,11 @@
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<ol class="property-list dish">
 			
-				<g:if test="${dishInstance?.price}">
+				<g:if test="${dishInstance?.name}">
 				<li class="fieldcontain">
-					<span id="price-label" class="property-label"><g:message code="dish.price.label" default="Price" /></span>
+					<span id="name-label" class="property-label"><g:message code="dish.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="price-label"><g:fieldValue bean="${dishInstance}" field="price"/></span>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${dishInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>
@@ -36,11 +36,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${dishInstance?.name}">
+				<g:if test="${dishInstance?.price}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="dish.name.label" default="Name" /></span>
+					<span id="price-label" class="property-label"><g:message code="dish.price.label" default="Price" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${dishInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="price-label"><g:fieldValue bean="${dishInstance}" field="price"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${dishInstance?.imgUri}">
+				<li class="fieldcontain">
+					<span id="imgUri-label" class="property-label"><g:message code="dish.imgUri.label" default="Img Uri" /></span>
+					
+						<span class="property-value" aria-labelledby="imgUri-label"><g:fieldValue bean="${dishInstance}" field="imgUri"/></span>
 					
 				</li>
 				</g:if>
@@ -49,7 +58,9 @@
 				<li class="fieldcontain">
 					<span id="set-label" class="property-label"><g:message code="dish.set.label" default="Set" /></span>
 					
-						<span class="property-value" aria-labelledby="set-label"><g:link controller="setMeal" action="show" id="${dishInstance?.set?.id}">${dishInstance?.set?.encodeAsHTML()}</g:link></span>
+						<g:each in="${dishInstance.set}" var="s">
+						<span class="property-value" aria-labelledby="set-label"><g:link controller="setMeal" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

@@ -18,6 +18,33 @@
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<ol class="property-list event">
 			
+				<g:if test="${eventInstance?.name}">
+				<li class="fieldcontain">
+					<span id="name-label" class="property-label"><g:message code="event.name.label" default="Name" /></span>
+					
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${eventInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventInstance?.info}">
+				<li class="fieldcontain">
+					<span id="info-label" class="property-label"><g:message code="event.info.label" default="Info" /></span>
+					
+						<span class="property-value" aria-labelledby="info-label"><g:fieldValue bean="${eventInstance}" field="info"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventInstance?.starttime}">
+				<li class="fieldcontain">
+					<span id="starttime-label" class="property-label"><g:message code="event.starttime.label" default="Starttime" /></span>
+					
+						<span class="property-value" aria-labelledby="starttime-label"><g:fieldValue bean="${eventInstance}" field="starttime"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${eventInstance?.duration}">
 				<li class="fieldcontain">
 					<span id="duration-label" class="property-label"><g:message code="event.duration.label" default="Duration" /></span>
@@ -32,33 +59,6 @@
 					<span id="day-label" class="property-label"><g:message code="event.day.label" default="Day" /></span>
 					
 						<span class="property-value" aria-labelledby="day-label"><g:link controller="day" action="show" id="${eventInstance?.day?.id}">${eventInstance?.day?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${eventInstance?.info}">
-				<li class="fieldcontain">
-					<span id="info-label" class="property-label"><g:message code="event.info.label" default="Info" /></span>
-					
-						<span class="property-value" aria-labelledby="info-label"><g:fieldValue bean="${eventInstance}" field="info"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${eventInstance?.name}">
-				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="event.name.label" default="Name" /></span>
-					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${eventInstance}" field="name"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${eventInstance?.starttime}">
-				<li class="fieldcontain">
-					<span id="starttime-label" class="property-label"><g:message code="event.starttime.label" default="Starttime" /></span>
-					
-						<span class="property-value" aria-labelledby="starttime-label"><g:fieldValue bean="${eventInstance}" field="starttime"/></span>
 					
 				</li>
 				</g:if>

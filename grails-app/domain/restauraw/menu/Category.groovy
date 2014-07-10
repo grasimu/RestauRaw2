@@ -7,6 +7,8 @@ class Category {
     static hasMany = [sets:SetMeal]
 
     static constraints = {
+        name()
+        info()
     }
 
     @Override

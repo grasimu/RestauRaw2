@@ -24,6 +24,8 @@
     <g:link class="form-control" controller="setMeal">Menüs</g:link>
     <g:link class="form-control" controller="dish">Speisen</g:link>
     <br>
+    <g:link class="form-control" controller="event">Veranstaltungen</g:link>
+    <g:link class="form-control" controller="reservation">Reservierungen</g:link>
     <g:link class="form-control" controller="employee">Mitarbeiter</g:link>
     <g:link class="form-control" controller="shift">Arbeitszeit</g:link>
     </ul>

@@ -19,15 +19,15 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="duration" title="${message(code: 'event.duration.label', default: 'Duration')}" />
-					
-						<th><g:message code="event.day.label" default="Day" /></th>
+						<g:sortableColumn property="name" title="${message(code: 'event.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="info" title="${message(code: 'event.info.label', default: 'Info')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'event.name.label', default: 'Name')}" />
-					
 						<g:sortableColumn property="starttime" title="${message(code: 'event.starttime.label', default: 'Starttime')}" />
+					
+						<g:sortableColumn property="duration" title="${message(code: 'event.duration.label', default: 'Duration')}" />
+					
+						<th><g:message code="event.day.label" default="Day" /></th>
 					
 					</tr>
 				</thead>
@@ -35,15 +35,15 @@
 				<g:each in="${eventInstanceList}" status="i" var="eventInstance">
 					<tr >
 					
-						<td><g:link action="show" id="${eventInstance.id}">${fieldValue(bean: eventInstance, field: "duration")}</g:link></td>
-					
-						<td>${fieldValue(bean: eventInstance, field: "day")}</td>
+						<td><g:link action="show" id="${eventInstance.id}">${fieldValue(bean: eventInstance, field: "name")}</g:link></td>
 					
 						<td>${fieldValue(bean: eventInstance, field: "info")}</td>
 					
-						<td>${fieldValue(bean: eventInstance, field: "name")}</td>
-					
 						<td>${fieldValue(bean: eventInstance, field: "starttime")}</td>
+					
+						<td>${fieldValue(bean: eventInstance, field: "duration")}</td>
+					
+						<td>${fieldValue(bean: eventInstance, field: "day")}</td>
 					
 					</tr>
 				</g:each>

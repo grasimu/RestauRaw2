@@ -18,11 +18,11 @@
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<ol class="property-list daily">
 			
-				<g:if test="${dailyInstance?.day}">
+				<g:if test="${dailyInstance?.name}">
 				<li class="fieldcontain">
-					<span id="day-label" class="property-label"><g:message code="daily.day.label" default="Day" /></span>
+					<span id="name-label" class="property-label"><g:message code="daily.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="day-label"><g:link controller="day" action="show" id="${dailyInstance?.day?.id}">${dailyInstance?.day?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${dailyInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>
@@ -36,11 +36,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${dailyInstance?.name}">
+				<g:if test="${dailyInstance?.day}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="daily.name.label" default="Name" /></span>
+					<span id="day-label" class="property-label"><g:message code="daily.day.label" default="Day" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${dailyInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="day-label"><g:link controller="day" action="show" id="${dailyInstance?.day?.id}">${dailyInstance?.day?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

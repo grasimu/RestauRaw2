@@ -19,15 +19,15 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="table" title="${message(code: 'reservation.table.label', default: 'Table')}" />
-					
-						<th><g:message code="reservation.day.label" default="Day" /></th>
-					
 						<g:sortableColumn property="name" title="${message(code: 'reservation.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="phonenumber" title="${message(code: 'reservation.phonenumber.label', default: 'Phonenumber')}" />
 					
 						<g:sortableColumn property="time" title="${message(code: 'reservation.time.label', default: 'Time')}" />
+					
+						<g:sortableColumn property="people" title="${message(code: 'reservation.people.label', default: 'People')}" />
+					
+						<th><g:message code="reservation.day.label" default="Day" /></th>
 					
 					</tr>
 				</thead>
@@ -35,15 +35,15 @@
 				<g:each in="${reservationInstanceList}" status="i" var="reservationInstance">
 					<tr >
 					
-						<td><g:link action="show" id="${reservationInstance.id}">${fieldValue(bean: reservationInstance, field: "table")}</g:link></td>
-					
-						<td>${fieldValue(bean: reservationInstance, field: "day")}</td>
-					
-						<td>${fieldValue(bean: reservationInstance, field: "name")}</td>
+						<td><g:link action="show" id="${reservationInstance.id}">${fieldValue(bean: reservationInstance, field: "name")}</g:link></td>
 					
 						<td>${fieldValue(bean: reservationInstance, field: "phonenumber")}</td>
 					
 						<td>${fieldValue(bean: reservationInstance, field: "time")}</td>
+					
+						<td>${fieldValue(bean: reservationInstance, field: "people")}</td>
+					
+						<td>${fieldValue(bean: reservationInstance, field: "day")}</td>
 					
 					</tr>
 				</g:each>

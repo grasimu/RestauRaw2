@@ -19,9 +19,9 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="info" title="${message(code: 'menu.info.label', default: 'Info')}" />
-					
 						<g:sortableColumn property="name" title="${message(code: 'menu.name.label', default: 'Name')}" />
+					
+						<g:sortableColumn property="info" title="${message(code: 'menu.info.label', default: 'Info')}" />
 					
 					</tr>
 				</thead>
@@ -29,9 +29,9 @@
 				<g:each in="${menuInstanceList}" status="i" var="menuInstance">
 					<tr >
 					
-						<td><g:link action="show" id="${menuInstance.id}">${fieldValue(bean: menuInstance, field: "info")}</g:link></td>
+						<td><g:link action="show" id="${menuInstance.id}">${fieldValue(bean: menuInstance, field: "name")}</g:link></td>
 					
-						<td>${fieldValue(bean: menuInstance, field: "name")}</td>
+						<td>${fieldValue(bean: menuInstance, field: "info")}</td>
 					
 					</tr>
 				</g:each>

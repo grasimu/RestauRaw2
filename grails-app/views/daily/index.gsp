@@ -19,11 +19,11 @@
 			<thead>
 					<tr>
 					
-						<th><g:message code="daily.day.label" default="Day" /></th>
+						<g:sortableColumn property="name" title="${message(code: 'daily.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="info" title="${message(code: 'daily.info.label', default: 'Info')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'daily.name.label', default: 'Name')}" />
+						<th><g:message code="daily.day.label" default="Day" /></th>
 					
 					</tr>
 				</thead>
@@ -31,11 +31,11 @@
 				<g:each in="${dailyInstanceList}" status="i" var="dailyInstance">
 					<tr >
 					
-						<td><g:link action="show" id="${dailyInstance.id}">${fieldValue(bean: dailyInstance, field: "day")}</g:link></td>
+						<td><g:link action="show" id="${dailyInstance.id}">${fieldValue(bean: dailyInstance, field: "name")}</g:link></td>
 					
 						<td>${fieldValue(bean: dailyInstance, field: "info")}</td>
 					
-						<td>${fieldValue(bean: dailyInstance, field: "name")}</td>
+						<td>${fieldValue(bean: dailyInstance, field: "day")}</td>
 					
 					</tr>
 				</g:each>

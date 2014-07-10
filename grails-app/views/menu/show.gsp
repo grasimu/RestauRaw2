@@ -18,13 +18,11 @@
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<ol class="property-list menu">
 			
-				<g:if test="${menuInstance?.categorys}">
+				<g:if test="${menuInstance?.name}">
 				<li class="fieldcontain">
-					<span id="categorys-label" class="property-label"><g:message code="menu.categorys.label" default="Categorys" /></span>
+					<span id="name-label" class="property-label"><g:message code="menu.name.label" default="Name" /></span>
 					
-						<g:each in="${menuInstance.categorys}" var="c">
-						<span class="property-value" aria-labelledby="categorys-label"><g:link controller="category" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${menuInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>
@@ -38,11 +36,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${menuInstance?.name}">
+				<g:if test="${menuInstance?.categorys}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="menu.name.label" default="Name" /></span>
+					<span id="categorys-label" class="property-label"><g:message code="menu.categorys.label" default="Categorys" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${menuInstance}" field="name"/></span>
+						<g:each in="${menuInstance.categorys}" var="c">
+						<span class="property-value" aria-labelledby="categorys-label"><g:link controller="category" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

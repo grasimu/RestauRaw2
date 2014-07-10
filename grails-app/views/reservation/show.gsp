@@ -18,24 +18,6 @@
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<ol class="property-list reservation">
 			
-				<g:if test="${reservationInstance?.table}">
-				<li class="fieldcontain">
-					<span id="table-label" class="property-label"><g:message code="reservation.table.label" default="Table" /></span>
-					
-						<span class="property-value" aria-labelledby="table-label"><g:fieldValue bean="${reservationInstance}" field="table"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${reservationInstance?.day}">
-				<li class="fieldcontain">
-					<span id="day-label" class="property-label"><g:message code="reservation.day.label" default="Day" /></span>
-					
-						<span class="property-value" aria-labelledby="day-label"><g:link controller="day" action="show" id="${reservationInstance?.day?.id}">${reservationInstance?.day?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${reservationInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="reservation.name.label" default="Name" /></span>
@@ -59,6 +41,24 @@
 					<span id="time-label" class="property-label"><g:message code="reservation.time.label" default="Time" /></span>
 					
 						<span class="property-value" aria-labelledby="time-label"><g:fieldValue bean="${reservationInstance}" field="time"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${reservationInstance?.people}">
+				<li class="fieldcontain">
+					<span id="people-label" class="property-label"><g:message code="reservation.people.label" default="People" /></span>
+					
+						<span class="property-value" aria-labelledby="people-label"><g:fieldValue bean="${reservationInstance}" field="people"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${reservationInstance?.day}">
+				<li class="fieldcontain">
+					<span id="day-label" class="property-label"><g:message code="reservation.day.label" default="Day" /></span>
+					
+						<span class="property-value" aria-labelledby="day-label"><g:link controller="day" action="show" id="${reservationInstance?.day?.id}">${reservationInstance?.day?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -8,6 +8,8 @@ class SetMeal {
     static hasMany = [dishes:Dish]
 
     static constraints = {
+        name()
+        info()
     }
 
     public getPrice(){

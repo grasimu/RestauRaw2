@@ -9,6 +9,9 @@ class Event {
     static belongsTo = [day:Day]
 
     static constraints = {
+        name()
+        info()
+        starttime()
         duration(min:0, max:86400) //Durations max is a day
     }
 }

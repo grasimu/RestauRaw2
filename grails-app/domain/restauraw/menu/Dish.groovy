@@ -12,6 +12,8 @@ class Dish{
     static belongsTo = SetMeal
 
     static constraints = {
+        name()
+        ingredients()
         price(blank:false, nullable:false, min:0.0f, scale: 2)
         imgUri  nullable: true
     }

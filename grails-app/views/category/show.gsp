@@ -18,20 +18,20 @@
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<ol class="property-list category">
 			
-				<g:if test="${categoryInstance?.info}">
-				<li class="fieldcontain">
-					<span id="info-label" class="property-label"><g:message code="category.info.label" default="Info" /></span>
-					
-						<span class="property-value" aria-labelledby="info-label"><g:fieldValue bean="${categoryInstance}" field="info"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${categoryInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="category.name.label" default="Name" /></span>
 					
 						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${categoryInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${categoryInstance?.info}">
+				<li class="fieldcontain">
+					<span id="info-label" class="property-label"><g:message code="category.info.label" default="Info" /></span>
+					
+						<span class="property-value" aria-labelledby="info-label"><g:fieldValue bean="${categoryInstance}" field="info"/></span>
 					
 				</li>
 				</g:if>

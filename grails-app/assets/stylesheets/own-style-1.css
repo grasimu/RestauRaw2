@@ -77,3 +77,9 @@ a {
     color: #EB000A;
     text-decoration: none;
 }
+
+.btn-success {
+    color: #EDEAE4;
+    background-color: #AB0004;
+    border-color: #780003;
+}

@@ -19,13 +19,13 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="price" title="${message(code: 'dish.price.label', default: 'Price')}" />
+						<g:sortableColumn property="name" title="${message(code: 'dish.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="ingredients" title="${message(code: 'dish.ingredients.label', default: 'Ingredients')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'dish.name.label', default: 'Name')}" />
+						<g:sortableColumn property="price" title="${message(code: 'dish.price.label', default: 'Price')}" />
 					
-						<th><g:message code="dish.set.label" default="Set" /></th>
+						<g:sortableColumn property="imgUri" title="${message(code: 'dish.imgUri.label', default: 'Img Uri')}" />
 					
 					</tr>
 				</thead>
@@ -33,13 +33,13 @@
 				<g:each in="${dishInstanceList}" status="i" var="dishInstance">
 					<tr >
 					
-						<td><g:link action="show" id="${dishInstance.id}">${fieldValue(bean: dishInstance, field: "price")}</g:link></td>
+						<td><g:link action="show" id="${dishInstance.id}">${fieldValue(bean: dishInstance, field: "name")}</g:link></td>
 					
 						<td>${fieldValue(bean: dishInstance, field: "ingredients")}</td>
 					
-						<td>${fieldValue(bean: dishInstance, field: "name")}</td>
+						<td>${fieldValue(bean: dishInstance, field: "price")}</td>
 					
-						<td>${fieldValue(bean: dishInstance, field: "set")}</td>
+						<td>${fieldValue(bean: dishInstance, field: "imgUri")}</td>
 					
 					</tr>
 				</g:each>

@@ -15,5 +15,7 @@ class Employee extends ShiroUser {
     static hasMany = [shifts:Shift]
     
     static constraints = {
+        name()
+        job()
     }
 }

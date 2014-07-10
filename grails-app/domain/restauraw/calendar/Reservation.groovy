@@ -4,11 +4,14 @@ class Reservation {
     String name
     String phonenumber
     String time
-    int table
+    int people
 
     static belongsTo = [day:Day]
 
     static constraints = {
-        table(min: 1, max: 50)
+        name()
+        phonenumber()
+        time()
+        people(min: 1, max: 50)
     }
 }
