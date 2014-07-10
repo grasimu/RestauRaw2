@@ -9,19 +9,19 @@
 
 <body>
 <div class="location-container container">
-    <div class="fahrplan-titelbild" style="background-image: url('../images/atmo.jpg')">
+    <div class="speise-titelbild" style="background-image: url('../images/atmo.jpg')">
     </div>
-    <div class="fahrplan">
+    <div class="speise">
         <g:each in="${categoryInstanceList}" status="i" var="categoryInstance">
-            <div class="fahrplan-category">
+            <div class="speise-category">
                 ${fieldValue(bean: categoryInstance, field: "name")}
             </div>
             <g:each in="${categoryInstance.sets}" var="s">
-                <div class="fahrplan-speise">
-                    <div class="fahrplan-speise-bild"  style="background-image: url(${s?.getUri().encodeAsHTML()})"></div>
-                    <div class="fahrplan-speise-content">
-                        <div class="fahrplan-speise-name">${s?.encodeAsHTML()} €</div>
-                        <div class="fahrplan-speise-info">Zutaten: ${s?.getIngredients().encodeAsHTML()}</div>
+                <div class="speise-speise">
+                    <div class="speise-speise-bild"  style="background-image: url(${s?.getUri().encodeAsHTML()})"></div>
+                    <div class="speise-speise-content">
+                        <div class="speise-speise-name">${s?.encodeAsHTML()} €</div>
+                        <div class="speise-speise-info">Zutaten: ${s?.getIngredients().encodeAsHTML()}</div>
                     </div>
                 </div>
             </g:each>

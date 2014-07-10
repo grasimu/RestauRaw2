@@ -47,7 +47,10 @@
     </div><!-- /.carousel -->
 
 
-
+    <div >
+       <h1> Willkommen auf der Homepage vom alten Güterbahnhof!</h1>
+        <h2>Hier können Sie von unseren Bahnangestellten bedienunen lassen, und von einer Einsenbahn bedient werden.</h2>
+    </div>
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
