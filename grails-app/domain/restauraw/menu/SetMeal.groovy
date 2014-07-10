@@ -39,7 +39,7 @@ class SetMeal {
        String out = ""
        def dishesArr = dishes.toArray()
        for (Dish dish in dishesArr ){
-           out += "$dish, "
+           out += "$dish.ingredients, "
        }
        return out.subSequence(0,out.length()-2)
     }

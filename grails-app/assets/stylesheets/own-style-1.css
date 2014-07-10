@@ -57,13 +57,13 @@ body {
 }
 
 .location-container {
-    /*background-color: #AB0004;*/
-    background-color: #EDEAE4;
+    background-color: #AB0004;
+    /*background-color: #EDEAE4;*/
     padding-top: 15px;
 }
 
 .container {
-    color: #AB0004;
+    color: #7c715f;
 }
 
 .carousel-caption {
