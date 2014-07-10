@@ -1,32 +1,46 @@
+
 <%@ page import="restauraw.menu.Category" %>
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="layout" content="main">
-    <g:set var="entityName" value="${message(code: 'category.label', default: 'Category')}"/>
-    <title><g:message code="default.list.label" args="[entityName]"/></title>
-</head>
-
-<body>
-<div class="location-container container">
-    <div class="fahrplan-titelbild" style="background-image: url('../images/atmo.jpg')">
-    </div>
-    <div class="fahrplan">
-        <g:each in="${categoryInstanceList}" status="i" var="categoryInstance">
-            <div class="fahrplan-category">
-                ${fieldValue(bean: categoryInstance, field: "name")}
+	<head>
+		<meta name="layout" content="main">
+		<g:set var="entityName" value="${message(code: 'category.label', default: 'Category')}" />
+		<title><g:message code="default.list.label" args="[entityName]" /></title>
+	</head>
+	<body>
+		<div class="nav-divider" role="navigation">
+				<a class="form-control" href="${createLink(uri: '/intern/')}"><span class="glyphicon glyphicon-home"></span> <g:message code="default.home.label"/></a>
+				<g:link class="form-control" action="create"><span class="glyphicon glyphicon glyphicon-plus-sign"></span> <g:message code="default.new.label" args="[entityName]" /></g:link>
+		</div>
+		<div id="list-category" class="content scaffold-list" role="main">
+			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+            <div class="table-responsive">
+            <table class="table table-striped">
+			<thead>
+					<tr>
+					
+						<g:sortableColumn property="info" title="${message(code: 'category.info.label', default: 'Info')}" />
+					
+						<g:sortableColumn property="name" title="${message(code: 'category.name.label', default: 'Name')}" />
+					
+					</tr>
+				</thead>
+				<tbody>
+				<g:each in="${categoryInstanceList}" status="i" var="categoryInstance">
+					<tr >
+					
+						<td><g:link action="show" id="${categoryInstance.id}">${fieldValue(bean: categoryInstance, field: "info")}</g:link></td>
+					
+						<td>${fieldValue(bean: categoryInstance, field: "name")}</td>
+					
+					</tr>
+				</g:each>
+				</tbody>
+			</table>
             </div>
-            <g:each in="${categoryInstance.sets}" var="s">
-                <div class="fahrplan-speise">
-                    <div class="fahrplan-speise-bild"  style="background-image: url(${s?.getUri().encodeAsHTML()})"></div>
-                    <div class="fahrplan-speise-content">
-                        <div class="fahrplan-speise-name">${s?.encodeAsHTML()} € </div>
-                        <div class="fahrplan-speise-info">Zutaten: ${s?.getIngredients().encodeAsHTML()}</div>
-                    </div>
-                </div>
-            </g:each>
-        </g:each>
-    </div>
-</div>
-</body>
+			<div class="pagination">
+				<g:paginate total="${categoryInstanceCount ?: 0}" />
+			</div>
+		</div>
+	</body>
 </html>

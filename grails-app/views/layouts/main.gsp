@@ -32,9 +32,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><a href="${createLink(uri: '/')}" class="nav-link">Home</a></li>
-                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="category" class="nav-link">Speisewagen</g:link></li>
-                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="event" class="nav-link">Fahrplan</g:link></li>
-                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="event" class="nav-link">Platz reservieren</g:link></li>
+                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="category" action="publicV" class="nav-link">Speisewagen</g:link></li>
+                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="event" action="publicV" class="nav-link">Fahrplan</g:link></li>
+                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="reservation" action="publicV" class="nav-link">Platz reservieren</g:link></li>
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="location" class="nav-link">Location</g:link></li>
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="restaurant" class="nav-link">Ausstattung</g:link></li>
                     </ul>

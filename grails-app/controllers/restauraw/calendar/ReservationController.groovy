@@ -19,6 +19,10 @@ class ReservationController {
         respond reservationInstance
     }
 
+    def publicV() {
+        respond new Reservation(params)
+    }
+
     def create() {
         respond new Reservation(params)
     }
