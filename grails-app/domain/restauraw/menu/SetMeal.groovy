@@ -50,7 +50,7 @@ class SetMeal {
     }
 
     public String getUri(){
-        return dishes.getAt(0).imgUri;
+        return dishes.getAt(0).imgUri
     }
 
 
