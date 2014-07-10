@@ -27,15 +27,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${setMealInstance?.info}">
-				<li class="fieldcontain">
-					<span id="info-label" class="property-label"><g:message code="setMeal.info.label" default="Info" /></span>
-					
-						<span class="property-value" aria-labelledby="info-label"><g:fieldValue bean="${setMealInstance}" field="info"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${setMealInstance?.dishes}">
 				<li class="fieldcontain">
 					<span id="dishes-label" class="property-label"><g:message code="setMeal.dishes.label" default="Dishes" /></span>

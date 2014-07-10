@@ -13,17 +13,6 @@
     </div>
 </div>
 
-<div class="form-group fieldcontain ${hasErrors(bean: setMealInstance, field: 'info', 'error')} required">
-	<label class="col-sm-2 control-label" for="info">
-		<g:message code="setMeal.info.label" default="Info" />
-		<span class="required-indicator">*</span>
-	</label>
-    <div class="col-sm-10">
-        <g:textField class="form-control" name="info" required="" value="${setMealInstance?.info}"/>
-
-    </div>
-</div>
-
 <div class="form-group fieldcontain ${hasErrors(bean: setMealInstance, field: 'dishes', 'error')} ">
 	<label class="col-sm-2 control-label" for="dishes">
 		<g:message code="setMeal.dishes.label" default="Dishes" />

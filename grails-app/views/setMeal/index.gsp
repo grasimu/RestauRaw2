@@ -21,8 +21,6 @@
 					
 						<g:sortableColumn property="name" title="${message(code: 'setMeal.name.label', default: 'Name')}" />
 					
-						<g:sortableColumn property="info" title="${message(code: 'setMeal.info.label', default: 'Info')}" />
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -30,8 +28,6 @@
 					<tr >
 					
 						<td><g:link action="show" id="${setMealInstance.id}">${fieldValue(bean: setMealInstance, field: "name")}</g:link></td>
-					
-						<td>${fieldValue(bean: setMealInstance, field: "info")}</td>
 					
 					</tr>
 				</g:each>

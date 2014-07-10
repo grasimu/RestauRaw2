@@ -13,6 +13,6 @@ class Category {
 
     @Override
     String toString() {
-        return name
+        return "$name - $info"
     }
 }

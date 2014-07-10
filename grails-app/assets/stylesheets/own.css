@@ -66,12 +66,7 @@ body {
     color: #7c715f;
 }
 
-.carousel-caption {
-    background-color: rgba(0,0,0,0.38);
-    border-radius: 15px;
-    padding: 10px;
-    color: #EDEAE4;
-}
+
 
 a {
     color: #EB000A;
@@ -83,3 +78,25 @@ a {
     background-color: #AB0004;
     border-color: #780003;
 }
+
+
+/* Carrousel */
+.carousel-caption p {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 21px;
+    line-height: 1.4;
+    transition-duration: 10s;
+}
+.carousel-caption {
+    background-color: rgba(0,0,0,0.30);
+    border-radius: 5px;
+    padding: 5px;
+    color: #EDEAE4;
+}
+
+
+
+
+
+

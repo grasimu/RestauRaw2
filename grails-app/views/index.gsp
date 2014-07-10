@@ -8,35 +8,36 @@
     <div class="location-container container">
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"class="active"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="item active" style=" background-image: url('images/ambiente2.jpg')">
+            <div class="item " style=" background-image: url('images/ambiente2.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Ambiente</h1>
-                        <p>Elegante, entspannte Atmosphere!</p>
+                        <h1>Nachster Halt...</h1>
+                        <p>... gleich bei ihnen am Tisch, denn unsere Speisewagen liefern ihnen Speisen und Getränke immer pünktlich! </p>
                     </div>
                 </div>
             </div>
-            <div class="item" style=" background-image: url('images/alter_bahnhof.jpg')">
+            <div class="item active" style=" background-image: url('images/alter_bahnhof.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Der Bahnhof</h1>
-                        <p>Mittem im Herzen der Stadt!</p>
+                        <h1>Zug fährt ein...</h1>
+                        <p>...im alten Güterbahnhof, dem Restaurant und Museum für große und kleine Eisenbahner!</p>
                     </div>
                 </div>
             </div>
             <div class="item" style=" background-image: url('images/speisen.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Speisen</h1>
-                        <p>Große Auswahl an verschiedenen Speisen!</p>
+                        <h1>Schwer beladen...</h1>
+                        <p>...mit Verpflegung für Kurz- und Langstrecke!</p>
+                        <a class="btn btn-lg btn-primary" href="#" role="button">Frachtliste</a>
                     </div>
                 </div>
             </div>
@@ -78,5 +79,4 @@
     </div>
     </div>
 	</body>
-
 </html>

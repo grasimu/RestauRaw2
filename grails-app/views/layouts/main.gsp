@@ -27,11 +27,10 @@
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Zum alten Güterbahnhof</a>
+                    <a class="navbar-brand" href="${createLink(uri: '/')}">Zum alten Güterbahnhof</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><a href="${createLink(uri: '/')}" class="nav-link">Home</a></li>
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="category" action="publicV" class="nav-link">Speisewagen</g:link></li>
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="event" action="publicV" class="nav-link">Fahrplan</g:link></li>
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="reservation" action="publicV" class="nav-link">Platz reservieren</g:link></li>

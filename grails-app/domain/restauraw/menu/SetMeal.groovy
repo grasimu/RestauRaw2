@@ -1,15 +1,13 @@
 package restauraw.menu
 
 class SetMeal {
-    String info
     String name
-
 
     static hasMany = [dishes:Dish]
 
     static constraints = {
         name()
-        info()
+
     }
 
     public getPrice(){
