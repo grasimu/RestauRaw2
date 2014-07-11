@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Restraurante</title>
+    <title>Welcome to Restraurant</title>
 </head>
 <body>
 <!-- START THE FEATURETTES -->
@@ -11,11 +11,12 @@
 
 <div class="row featurette">
     <div class="col-md-7">
-        <h2 class="featurette-heading">Willkommen<span class="text-muted"></span></h2>
-        <p class="lead">Willkommen auf der Homepage vom Restaurant "Der Speisewagen".
-        Dieses Restaurant ist voll und ganz jeglicher Art von Lokomotiven, Zügen und
-        Güterwagen verfallen.
-        Dies fängt schon mit der Location an, welche sich in Kiel am alten Güterbahnhof befindet.</p>
+        <h2 class="featurette-heading">Zum alten Güterbahnhof<span class="text-muted"></span></h2>
+        <p class="lead">Der alte Güterbahnhof, ist ein Gebäude aus dem 19. Jahrhundert.
+        Damals wurden dort alle Güter umgeladen um Sie von dort aus zu Schiffen weiter zu transportieren, welche
+        dann nach ganz Europa weitergeschickt wurden. Heute dient dieses alte Gebäude mitsamt seinen alten Schienen und
+        alten Güterwagen, welche um das Gebäude herum stehen, uns als Restaurant.</p>
+
     </div>
     <div class="col-md-5">
         <img class="featurette-image img-responsive" src="../images/bahnhof.jpg" alt="Generic placeholder image">
@@ -30,8 +31,9 @@
     </div>
     <div class="col-md-7">
         <h2 class="featurette-heading">Unsere Mitarbeiter <span class="text-muted"></span></h2>
-        <p class="lead">Unsere Mitarbeiter haben alle eine Ausbild als Lokomotivführer absolviert, und sind mit vollem Herzen
-        dabei dass Sie sich bei uns wohlfühlen.</p>
+        <p class="lead">Das Personal ist dem Bahnfieber verfallen. Jeder von ihnen
+        ist ein Eisenbahnliebhaber und kann durchaus mit historischem Hintergrundwissen zu unseren
+        Modelleisenbahnen und Ausstellungsstücken glänzen.</p>
     </div>
 </div>
 
@@ -40,8 +42,8 @@
 <div class="row featurette">
     <div class="col-md-7">
         <h2 class="featurette-heading">Eisenbahnbedienung <span class="text-muted"></span></h2>
-        <p class="lead">Ein großes Highlight in unserem Restaurant ist außerdem, die Bedienung von unseren Modelleisenban,
-        ebenso hat jeder Tisch bei uns die Möglichkeit seine Modeleisenbahn selber zu Steuern und durch den Raum zubewegen.</p>
+        <p class="lead">Ein großes Highlight in unserem Restaurant ist außerdem die Bedienung von unseren Modelleisenbahn,
+        ebenso hat jeder Tisch bei uns die Möglichkeit seine Modelleisenbahn selbst zu steuern und durch den Raum zu bewegen.</p>
     </div>
     <div class="col-md-5">
         <img class="featurette-image img-responsive" src="../images/speisen.jpg" alt="Generic placeholder image">

@@ -19,9 +19,9 @@
             <div class="item active" style=" background-image: url('images/ambiente2.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Nachster Halt...</h1>
+                        <h1>Nächster Halt...</h1>
                         <p>... gleich bei ihnen am Tisch, denn unsere Speisewagen liefern ihnen Speisen und Getränke immer pünktlich! </p>
-                        <a class="btn btn-lg btn-success" href="${createLink(uri: '/reservation/publicV')}" role="button">jetzt reservieren</a>
+                        <a class="btn btn-lg btn-success" href="${createLink(uri: '/reservation/publicV')}" role="button">Jetzt reservieren</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     <div class="carousel-caption">
                         <h1>Zug fährt ein...</h1>
                         <p>...im alten Güterbahnhof, dem Restaurant und Museum für große und kleine Eisenbahner!</p>
-                        <a class="btn btn-lg btn-success" href="${createLink(uri: '/restaurant/index')}" role="button">mehr erfahren</a>
+                        <a class="btn btn-lg btn-success" href="${createLink(uri: '/restaurant/index')}" role="button">Mehr erfahren</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
     <div >
 
         <h1> <center> Wir begrüßen Sie ganz herzlich</center></h1>
-        <h3> am alten Güterbahnhof, dem Restaurant und Museum das Eisenbahnerherzen höher schlagen lässt</h3>
+        <h3> am alten Güterbahnhof, dem Restaurant und Museum das Eisenbahnerherzen höher schlagen lässt.</h3>
     </div>
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -65,20 +65,21 @@
         <div class="col-lg-4 text-center">
             <img class="img-circle" src="images/bahnhof.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
             <h2>Am alten Güterbahnhof</h2>
-            <p>gelegen hat unserer Restaurant den Besten Standort und die beste Austattung die man als Eisenbahner nur haben kann. Ein eigenes befahrbares Haltegleis
-            und diverse historische Gegenstände</p>
+            <p>gelegen, hat unserer Restaurant den b
+            esten Standort und die beste Austattung die man als Eisenbahner nur haben kann. Ein eigenes befahrbares Haltegleis
+            und diverse historische Gegenstände.</p>
             <p><g:link controller="location">Über uns</g:link></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
             <img class="img-circle" src="images/Zuggrill.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Fahrplan</h2>
-            <p>Spannende Halte auf unserer Fahrt durch das Jahr. Wir haben Veranstaltung für alle Altersklassen.</p>
+            <h2>Der Fahrplan</h2>
+            <p>informiert über die spannenden Haltestellen auf unserer Fahrt durch das Jahr. Wir haben Veranstaltung für alle Altersklassen.</p>
             <p><g:link controller="event" action="publicV">Unser Fahrplan</g:link></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
             <img class="img-circle" src="images/bahnbedienung.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
             <h2>Unsere Mitarbeiter</h2>
-            <p>in authentischer Kleidung stehen ihn jederzeit für ein Fachgespräch zur Verfügung und sorgen dafür dass ihre Speisen keine Verspätung haben</p>
+            <p>in authentischer Kleidung stehen ihn jederzeit für ein Fachgespräch zur Verfügung und sorgen dafür, dass ihre Speisen keine Verspätung haben</p>
             <p><g:link controller="reservation" action="publicV">Ticket buchen</g:link></p>
         </div><!-- /.col-lg-4 -->
 
