@@ -10,11 +10,11 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0"></li>
-            <li data-target="#myCarousel" data-slide-to="1"class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+        %{--<ol class="carousel-indicators">--}%
+            %{--<li data-target="#myCarousel" data-slide-to="0"></li>--}%
+            %{--<li data-target="#myCarousel" data-slide-to="1"class="active"></li>--}%
+            %{--<li data-target="#myCarousel" data-slide-to="2"></li>--}%
+        %{--</ol>--}%
         <div class="carousel-inner">
             <div class="item " style=" background-image: url('images/ambiente2.jpg')">
                 <div class="container">

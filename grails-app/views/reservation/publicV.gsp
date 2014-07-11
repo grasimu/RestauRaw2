@@ -6,6 +6,9 @@
     <title><g:message code="default.create.label" args="[entityName]" /></title>
 </head>
 <body>
+<div class="location-container container">
+<div class="speise-titelbild" style="background-image: url('../images/Fahrschein.jpg')">
+</div>
 <div id="create-reservation" class="content scaffold-create form-group" role="main">
     <h1>Reservierung anlegen:</h1>
     <g:hasErrors bean="${reservationInstance}">
@@ -24,6 +27,7 @@
         </fieldset>
     </g:form>
 
+</div>
 </div>
 </body>
 </html>
