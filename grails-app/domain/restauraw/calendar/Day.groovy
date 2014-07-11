@@ -20,7 +20,7 @@ class Day {
 
     @Override
     String toString() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd. MMMMM yyyy");
         return dateFormat.format(date)
     }
 }

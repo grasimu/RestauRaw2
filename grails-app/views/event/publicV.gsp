@@ -73,6 +73,7 @@
     <div class="fahrplan-content">
         ${eventInstance.info}
     </div>
+    <hr>
 </g:each>
 </div>
 </body>
