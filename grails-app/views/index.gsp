@@ -48,8 +48,8 @@
 
 
     <div >
-       <h1> </h1>
-        <h2>Hier können Sie von unseren Bahnangestellten bedienunen lassen, und von einer Einsenbahn bedient werden.</h2>
+        <h1> <center> Wir begrüßen Sie ganz herzlich</center></h1>
+        <h3> am alten Güterbahnhof, dem Restaurant und Museum das Eisenbahnerherzen höher schlagen lässt</h3>
     </div>
     <!-- Marketing messaging and featurettes
     ================================================== -->
