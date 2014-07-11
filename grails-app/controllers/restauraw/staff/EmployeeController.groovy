@@ -20,7 +20,6 @@ class EmployeeController {
     }
 
     def create() {
-        params.passwordHash =  new Sha256Hash(params.passwordHash).toHex()
         respond new Employee(params)
     }
 
@@ -35,7 +34,7 @@ class EmployeeController {
             respond employeeInstance.errors, view:'create'
             return
         }
-
+        employeeInstance.passwordHash = new Sha256Hash(employeeInstance.passwordHash).toHex()
         employeeInstance.save flush:true
         employeeInstance.addToPermissions("shift:user")
 

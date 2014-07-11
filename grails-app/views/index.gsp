@@ -48,7 +48,7 @@
 
 
     <div >
-       <h1> Willkommen auf der Homepage vom alten Güterbahnhof!</h1>
+       <h1> </h1>
         <h2>Hier können Sie von unseren Bahnangestellten bedienunen lassen, und von einer Einsenbahn bedient werden.</h2>
     </div>
     <!-- Marketing messaging and featurettes
@@ -62,21 +62,22 @@
             <div class="col-lg-4 text-center">
                     <img class="img-circle" src="images/bahnbedienung.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 
-                <h2>Authentische Bedienung</h2>
-                <p>Unsere Bedienung bedient Sie in authentischer alter Lokführer Uniform.</p>
-                <p><g:link controller="employee">Mitarbeiter</g:link></p>
+                <h2>Unsere Mitarbeiter</h2>
+                <p>in authentischer Kleidung stehen ihn jederzeit für ein Fachgespräch zur Verfügung und sorgen dafür dass ihre Speisen keine Verspätung haben</p>
+                <p><g:link controller="reservation" action="publicV">Ticket buchen</g:link></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center">
                 <img class="img-circle" src="images/Zuggrill.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                 <h2>Fahrplan</h2>
-                <p>Spannende Halte auf unserer Fahrt durch das Jahr. Ereignisse für jedermann.</p>
-                <p><g:link controller="event" action="publicV">Fahrplan</g:link></p>
+                <p>Spannende Halte auf unserer Fahrt durch das Jahr. Wir haben Veranstaltung für alle Altersklassen.</p>
+                <p><g:link controller="event" action="publicV">Unser Fahrplan</g:link></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center">
                 <img class="img-circle" src="images/bahnhof.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                 <h2>Am alten Güterbahnhof</h2>
-                <p>Restaurant am alten Güterbahnhof mit schöner Eisenbahn bedienung.</p>
-                <p><g:link controller="location">Location</g:link></p>
+                <p>gelegen hat unserer Restaurant den Besten Standort und die beste Austattung die man als Eisenbahner nur haben kann. Ein eigenes befahrbares Haltegleis
+                und diverse historische Gegenstände</p>
+                <p><g:link controller="location">Über uns</g:link></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
     </div>
