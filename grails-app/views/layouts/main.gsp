@@ -55,7 +55,7 @@
     <div class="footer">
         <div class="container">
         <p class="pull-right"><a href="#" class="link-footer">Back to top</a></p>
-        <p>&copy; 2014 Zum Alten Güterbahnhof, Kiel &middot; <g:link controller="shift" action="user" class="link-footer">Mitarbeiter</g:link> &middot; <g:link controller="intern" class="link-footer">Admin</g:link> &middot; <g:link controller="auth" action="signOut" class="link-footer">logout</g:link> &middot; <a href="#" class="link-footer">Privacy</a> &middot; <a href="#" class="link-footer">Terms</a></p>
+        <p>&copy; 2014 Zum Alten Güterbahnhof, Kiel &middot; <g:link controller="shift" action="user" class="link-footer">Mitarbeiter</g:link> &middot; <g:link controller="intern" class="link-footer">Admin</g:link> &middot; <g:link controller="auth" action="signOut" class="link-footer">logout</g:link></p>
         </div>
     </div>
 
