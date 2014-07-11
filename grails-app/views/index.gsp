@@ -21,14 +21,16 @@
                     <div class="carousel-caption">
                         <h1>Nachster Halt...</h1>
                         <p>... gleich bei ihnen am Tisch, denn unsere Speisewagen liefern ihnen Speisen und Getränke immer pünktlich! </p>
+                        <a class="btn btn-lg btn-success" href="${createLink(uri: '/reservation/publicV')}" role="button">jetzt reservieren</a>
                     </div>
                 </div>
             </div>
-            <div class="item active" style=" background-image: url('images/alter_bahnhof.jpg')">
+            <div class="item active " style=" background-image: url('images/alter_bahnhof2.jpg')">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Zug fährt ein...</h1>
                         <p>...im alten Güterbahnhof, dem Restaurant und Museum für große und kleine Eisenbahner!</p>
+                        <a class="btn btn-lg btn-success" href="${createLink(uri: '/restaurant/index')}" role="button">mehr erfahren</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +39,7 @@
                     <div class="carousel-caption">
                         <h1>Schwer beladen...</h1>
                         <p>...mit Verpflegung für Kurz- und Langstrecke!</p>
-                        <a class="btn btn-lg btn-primary" href="#" role="button">Frachtliste</a>
+                        <a class="btn btn-lg btn-success" href="${createLink(uri: '/category/publicV')}" role="button">Ladung betrachten</a>
                     </div>
                 </div>
             </div>
@@ -48,6 +50,7 @@
 
 
     <div >
+
         <h1> <center> Wir begrüßen Sie ganz herzlich</center></h1>
         <h3> am alten Güterbahnhof, dem Restaurant und Museum das Eisenbahnerherzen höher schlagen lässt</h3>
     </div>
