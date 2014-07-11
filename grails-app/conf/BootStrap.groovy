@@ -28,12 +28,12 @@ class BootStrap {
         admin.save(flush: true, failOnError: true)
         admin.addToPermissions("*:*")
 
-        def dish1 = new Dish(name: "Rasender Roland",imgUri: "../images/food/meat.jpg", ingredients: "Hackfleisch", price: 5.9)
-        def dish2 = new Dish(name: "Transrapid", ingredients: "Käse", price: 6.5)
-        def dish3 = new Dish(name: "Eiskrem", ingredients: "Erdbeeren", price: 2.2)
-        def dish4 = new Dish(name: "Kuchen", ingredients: "Erdbeeren, Sahne", price: 2.7)
-        def dish5 = new Dish(name: "Cola", ingredients: "Zucker", price: 1.9)
-        def dish6 = new Dish(name: "Nudelsuppe", ingredients: "Nudeln, Suppe", price:3.2)
+        def dish1 = new Dish(name: "Rasender Roland",imgUri: "../images/food/roland.jpg", ingredients: "Hackfleisch", price: 5.9)
+        def dish2 = new Dish(name: "Transrapid", imgUri: "../images/food/käse.jpg", ingredients: "Käse", price: 6.5)
+        def dish3 = new Dish(name: "Eiskrem", imgUri: "../images/food/erdbeereis.jpg",ingredients: "Erdbeeren", price: 2.2)
+        def dish4 = new Dish(name: "Kuchen", imgUri: "../images/food/erdbeerkuchen.JPG",ingredients: "Erdbeeren, Sahne", price: 2.7)
+        def dish5 = new Dish(name: "Cola", imgUri: "../images/food/cola.jpg",ingredients: "Zucker", price: 1.9)
+        def dish6 = new Dish(name: "Nudelsuppe", imgUri: "../images/food/asiatische-huehner-nudelsuppe.jpg",ingredients: "Nudeln, Suppe", price:3.2)
 
         def set1 = new SetMeal(name: "Zug", info: "schnell und lecker")
         set1.addToDishes(dish1);

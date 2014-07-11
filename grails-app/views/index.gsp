@@ -67,10 +67,10 @@
                 <p><g:link controller="employee">Mitarbeiter</g:link></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center">
-                <img class="img-circle" src="images/speisen.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-                <h2>Speisen</h2>
-                <p>Feinst hergerichtete Speisen, im Sinne der Eisenbahn. Es gibt aber auch normale Speisen.</p>
-                <p><g:link controller="category">Fahrplan</g:link></p>
+                <img class="img-circle" src="images/Zuggrill.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Fahrplan</h2>
+                <p>Spannende Halte auf unserer Fahrt durch das Jahr. Ereignisse für jedermann.</p>
+                <p><g:link controller="event" action="publicV">Fahrplan</g:link></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center">
                 <img class="img-circle" src="images/bahnhof.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">

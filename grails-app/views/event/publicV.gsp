@@ -8,6 +8,10 @@
     <title><g:message code="default.list.label" args="[entityName]" /></title>
 </head>
 <body>
+<div class="location-container container">
+    <div class="location-titelbild" style="background-image: url('../images/Zugevent.jpg')">
+
+    </div>
 <g:each in="${eventInstanceList}" status="i" var="eventInstance">
     <div class="fahrplan-titel">
         ${eventInstance.name}

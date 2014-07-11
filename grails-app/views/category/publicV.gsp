@@ -9,7 +9,7 @@
 
 <body>
 <div class="location-container container">
-    <div class="speise-titelbild" style="background-image: url('../images/atmo.jpg')">
+    <div class="speise-titelbild" style="background-image: url('../images/food/Zugrestaurant.jpg')">
     </div>
     <div class="speise">
         <g:each in="${categoryInstanceList}" status="i" var="categoryInstance">

@@ -34,8 +34,8 @@
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="category" action="publicV" class="nav-link">Speisewagen</g:link></li>
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="event" action="publicV" class="nav-link">Fahrplan</g:link></li>
                         <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="reservation" action="publicV" class="nav-link">Platz reservieren</g:link></li>
-                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="location" class="nav-link">Location</g:link></li>
-                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="restaurant" class="nav-link">Ausstattung</g:link></li>
+                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="location" class="nav-link">Kontakt</g:link></li>
+                        <li<%= request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : '' %>><g:link controller="restaurant" class="nav-link">Unser Bahnhof</g:link></li>
                     </ul>
                 </div>
             </div>
