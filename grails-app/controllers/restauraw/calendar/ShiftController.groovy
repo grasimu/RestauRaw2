@@ -1,6 +1,8 @@
 package restauraw.calendar
 
-
+import org.apache.shiro.SecurityUtils
+import org.apache.shiro.subject.Subject
+import restauraw.staff.Employee
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
@@ -12,7 +14,16 @@ class ShiftController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
+        print(Shift.count())
         respond Shift.list(params), model:[shiftInstanceCount: Shift.count()]
+    }
+
+    def user(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        Subject currentUser = SecurityUtils.getSubject();
+        def emp = Employee.findByUsername(currentUser.principal)
+        def shifts = emp.shifts.asList()
+        respond shifts, model:[shiftInstanceCount: shifts.size()]
     }
 
     def show(Shift shiftInstance) {

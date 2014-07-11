@@ -8,11 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <asset:stylesheet src="application"/>
     <meta charset="utf-8">
-    <title>Der Speisewagen</title>
+    <title>Zum alten Güterbahnhof</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -55,7 +55,7 @@
     <div class="footer">
         <div class="container">
         <p class="pull-right"><a href="#" class="link-footer">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <g:link controller="shift" class="link-footer">Mitarbeiter</g:link> &middot; <g:link controller="intern" class="link-footer">Admin</g:link> &middot; <g:link controller="auth" action="signOut" class="link-footer">logout</g:link> &middot; <a href="#" class="link-footer">Privacy</a> &middot; <a href="#" class="link-footer">Terms</a></p>
+        <p>&copy; 2014 Zum Alten Güterbahnhof, Kiel &middot; <g:link controller="shift" action="user" class="link-footer">Mitarbeiter</g:link> &middot; <g:link controller="intern" class="link-footer">Admin</g:link> &middot; <g:link controller="auth" action="signOut" class="link-footer">logout</g:link> &middot; <a href="#" class="link-footer">Privacy</a> &middot; <a href="#" class="link-footer">Terms</a></p>
         </div>
     </div>
 

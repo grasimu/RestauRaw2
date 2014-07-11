@@ -1,6 +1,6 @@
 package restauraw.staff
 
-
+import org.apache.shiro.crypto.hash.Sha256Hash
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
@@ -20,6 +20,7 @@ class EmployeeController {
     }
 
     def create() {
+        params.passwordHash =  new Sha256Hash(params.passwordHash).toHex()
         respond new Employee(params)
     }
 
@@ -36,6 +37,7 @@ class EmployeeController {
         }
 
         employeeInstance.save flush:true
+        employeeInstance.addToPermissions("shift:user")
 
         request.withFormat {
             form multipartForm {

@@ -1,4 +1,5 @@
 package restauraw.calendar
+import restauraw.staff.Employee
 
 class Shift {
     ShiftTime shiftTime

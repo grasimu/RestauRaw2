@@ -16,8 +16,8 @@ class BootStrap {
                 passwordHash: new Sha256Hash("user").toHex(),
                 name:"Klaus",
                 job: Employee.Job.CLEANER);
-        user.save(flush: true, failOnError: true)
-        user.addToPermissions("shift:*")
+        //user.save(flush: true, failOnError: true)
+
 
 
         def admin = new Employee(
@@ -27,8 +27,7 @@ class BootStrap {
                 job: Employee.Job.COORDINATOR);
         admin.save(flush: true, failOnError: true)
         admin.addToPermissions("*:*")
-//TODO: Gerichte einzeln machen
-//TODO: HAuptspeise -> Langstrecke, Vorspeise Kurzstrecke ...
+
         def dish1 = new Dish(name: "Rasender Roland",imgUri: "../images/food/meat.jpg", ingredients: "Hackfleisch", price: 5.9)
         def dish2 = new Dish(name: "Transrapid", ingredients: "Käse", price: 6.5)
         def dish3 = new Dish(name: "Eiskrem", ingredients: "Erdbeeren", price: 2.2)
@@ -54,23 +53,30 @@ class BootStrap {
 
         def category1 = new restauraw.menu.Category(name: "Hauptspeisen", info: "optimal für Langstrecke")
         category1.addToSets(set1).addToSets(set2).addToSets(set5)
-        def category2 = new restauraw.menu.Category(name: "Nachspeisen", info: "Für den Bahnhof")
+        def category2 = new restauraw.menu.Category(name: "Nachspeisen", info: "für den Bahnhof")
         category2.addToSets(set3).addToSets(set6)
-        def category3 = new restauraw.menu.Category(name: "Getränke", info: "Durstig?")
+        def category3 = new restauraw.menu.Category(name: "Getränke", info: "durstig?")
         category3.addToSets(set4)
         def category4 = new restauraw.menu.Category(name: "Vorspeisen", info: " das richtige für Kurzstrecke")
         category4.addToSets(set7)
 
         def menu = new Menu(name: "Speiseka", info: "Unser Bestes").addToCategorys(category3).addToCategorys(category2).addToCategorys(category1).addToCategorys(category4).save(flush: true, failOnError: true)
-        def event1 = new Event(name: "Das Große Lokomotiven Fest", info: "Mit volldampf ist die Lokomotive Klaus bei uns zu Gast auf dem Bahnhof und wir Gillen auf dem Heizkessel", duration: 10, starttime: "11:00")
+        def event1 = new Event(name: "Das Große Lokomotiven Fest", info: "Mit Volldampf ist die Lokomotive Klaus bei uns zu Gast auf dem Bahnhof und wir Gillen auf dem Heizkessel", duration: 10000, starttime: "11:00")
+        def event2 = new Event(name: "Schleswig Holsteiner Modellbaukonferenz", info: "Auch dieses Jahr treffen sich bei uns wieder alle großen Modellbauer aus ganz Schleswig-Holstein." +
+                "Es geht um Neuigkeiten aus der Szene und das knüpfen von Kontakten. Natürlich gibt es auch leckeres Essen. Also komm vorbei!", duration: 18976, starttime: "09:00")
 
 
         def shift = new Shift(shiftTime: Shift.ShiftTime.EARLY)
-        def day = new Day(date: new Date()).addToShifts(shift).addToEvents(event1)
+        def shift2 = new Shift(shiftTime: Shift.ShiftTime.NORMAL)
+        user.addToShifts(shift)
+        def day = new Day(date: new Date()).addToShifts(shift).addToShifts(shift2).addToEvents(event1).addToEvents(event2)
         def calendar = new restauraw.calendar.Calendar(year: 2014).addToDays(day).save(flush: true, failOnError: true)
 
         shift.save(flush:true, failOnError: true)
+        shift2.save(flush:true, failOnError: true)
         event1.save(flush:true, failOnError: true)
+        user.save(flush: true, failOnError: true)
+        user.addToPermissions("shift:user:*")
         day.save(flush: true, failOnError: true)
         category1.save(flush: true, failOnError: true)
         category2.save(flush: true, failOnError: true)
